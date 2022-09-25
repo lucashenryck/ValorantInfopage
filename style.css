@@ -1,0 +1,226 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  width: 100%;
+  min-height: 40px;
+  background-color: #181818;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 8px 15px;
+}
+.logoNavBar {
+  width: 100px;
+}
+.titleNavBar {
+  width: 200px;
+}
+.headerBtnGroup {
+  display: flex;
+  gap: 15px;
+}
+.navBarBtn {
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  color: #fd4556;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.navBarBtn:hover {
+  border: 2px solid #fd4556;
+}
+.sectionTitle {
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.sectionDescription {
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.content-section {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "mainContent sideBarContent";
+  padding: 20px;
+  gap: 50px;
+  flex: 1 0 auto;
+}
+.mainContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  grid-area: mainContent;
+}
+.categoryCard {
+  width: 280px;
+  height: 130vh;
+  border: 3px solid transparent;
+  transition: 1s;
+  cursor: pointer;
+  align-items: center;
+  border: 2px solid #fd4556;
+}
+.categoryCard:hover {
+  background-color: #fd4556;
+}
+.categoryCard:hover .class-symbol {
+  display: block;
+}
+.categoryCard:hover .className {
+  display: block;
+}
+.mainCardImg {
+  width: 100%;
+  height: 50%;
+}
+.mainCategoryCardTitle {
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  padding: 10px;
+}
+.class-symbol {
+  display: none;
+  width: 80px;
+  margin-left: 90px;
+}
+.className {
+  margin-left: 60px;
+  padding-top: 20px;
+  display: none;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+.init {
+  margin-left: 80px;
+}
+.sent {
+  margin-left: 80px;
+}
+.duel {
+  margin-left: 88px;
+}
+.mainCategoryCardDescription {
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  padding: 10px;
+}
+.sideBarContent {
+  height: 40%;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  background-color: #fd4556;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+  grid-area: sideBarContent;
+  gap: 40px;
+}
+.sideBarCard {
+  margin-left: 25px;
+  width: 85%;
+  border: 2px solid transparent;
+  transition: 0.5s;
+  cursor: pointer;
+  gap: 15px;
+  padding: 10px;
+}
+.sideBarCardImg {
+  width: 100%;
+}
+.sideBarCard:hover {
+  border-color: white;
+}
+.footer {
+  width: 100%;
+  min-height: 40px;
+  background-color: #181818;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 15px;
+}
+.logoFooter {
+  width: 100px;
+}
+.footerAnchor {
+  margin-right: 45%;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  color: #fd4556;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .footerAnchor {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 630px) {
+  .content-section {
+    grid-template-areas:
+      "mainContent"
+      "sideBarContent";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .sideBarContent {
+    min-width: auto;
+  }
+}
+@media (max-width: 636px) {
+  .header {
+    justify-content: center;
+  }
+  .footer {
+    justify-content: center;
+  }
+}
+@media (max-width: 1470px) {
+  .content-section {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "mainContent sideBarContent";
+  }
+}
+@media (max-width: 1496px) and (min-width: 1372px) {
+  .sideBarContent {
+    height: 55%;
+  }
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+}
