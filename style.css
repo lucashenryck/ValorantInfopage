@@ -194,6 +194,7 @@
 }
 @media (max-width: 670px) {
   .content-section {
+    grid-template-columns: 1fr;
     grid-template-areas:
       "mainContent"
       "sideBarContent";
